@@ -1,0 +1,15 @@
+/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  font-family: Urbanist;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  // user-select: none;
+}
+
+body {
+  background-color: #8d99ae;
+  min-height: 90vh;
+}

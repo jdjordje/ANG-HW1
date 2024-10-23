@@ -1,0 +1,30 @@
+<div class="card">
+  <div class="card-header">
+    <h1>{{ job().position }}</h1>
+    <div>
+      <p>Expires:</p>
+      <p>{{ job().expires }}</p>
+    </div>
+  </div>
+  <div class="card-body">
+    <p><i class="fa-regular fa-building"></i> {{ job().company }}</p>
+    <p>
+      <i class="fa-solid fa-circle-dollar-to-slot"> </i> Starting salary:
+      {{ job().startingSalary }}
+    </p>
+    <p>
+      <i class="fa-solid fa-laptop-file"></i> Work Type: {{ job().workType }}
+    </p>
+
+    <!-- problem -->
+    <div class="details-container" appToogleDetails [isInitiallyOpen]="true">
+      <h3>More info <i class="fa-solid fa-caret-down"></i></h3>
+      <div class="more-info">
+        <p>Location: {{ job().location }}</p>
+        <p>Country: {{ job().country }}</p>
+        <p>Qualifications: {{ job().qualifications }}</p>
+        <p>Description: {{ job().description }}</p>
+      </div>
+    </div>
+  </div>
+</div>

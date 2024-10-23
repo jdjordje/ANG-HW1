@@ -1,0 +1,5 @@
+<div class="card-container">
+  @for (job of jobs(); track job.company) {
+  <app-jobs-item [job]="job" />
+  }
+</div>

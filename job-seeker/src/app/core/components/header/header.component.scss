@@ -1,0 +1,25 @@
+header {
+  background-color: #8d99ae;
+  // width: 700px;
+
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 10px;
+    padding-right: 10%;
+    font-size: 25px;
+    align-items: center;
+    background-color: #2b2d42;
+    border-radius: 0 0 20px 20px;
+    color: #edf2f4;
+
+    cursor: default;
+    .fa-solid {
+      color: #ef233c;
+    }
+    .jobs-info-header {
+      font-size: 20px;
+    }
+  }
+}
