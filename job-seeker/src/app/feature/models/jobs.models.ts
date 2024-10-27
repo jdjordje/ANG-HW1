@@ -1,4 +1,5 @@
 export interface Job {
+  id: number;
   company: string;
   expires: string;
   position: string;

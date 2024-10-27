@@ -10,20 +10,60 @@
     <p><i class="fa-regular fa-building"></i> {{ job().company }}</p>
     <p>
       <i class="fa-solid fa-circle-dollar-to-slot"> </i> Starting salary:
-      {{ job().startingSalary }}
+      {{ job().startingSalary | number }}
     </p>
     <p>
-      <i class="fa-solid fa-laptop-file"></i> Work Type: {{ job().workType }}
+      <i class="fa-solid fa-laptop-file"></i> Work Type:
+      {{ job().workType | titlecase }}
     </p>
 
-    <!-- problem -->
-    <div class="details-container" appToogleDetails [isInitiallyOpen]="true">
-      <h3>More info <i class="fa-solid fa-caret-down"></i></h3>
+    <div
+      class="details-container"
+      appToogleDetails
+      [isInitiallyOpen]="false"
+      (click)="onJobItemSelect(job())"
+    >
+      <h3 class="heading">More info <i class="fa-solid fa-caret-down"></i></h3>
       <div class="more-info">
         <p>Location: {{ job().location }}</p>
         <p>Country: {{ job().country }}</p>
         <p>Qualifications: {{ job().qualifications }}</p>
         <p>Description: {{ job().description }}</p>
+        @if(job().isApplied){
+        <div class="button-container">
+          <p [style]="{ color: 'green' }">
+            <i class="fa-solid fa-check"></i><strong> Applied</strong>
+          </p>
+          <app-button
+            (buttonClicked)="onApplyWithdraw()"
+            text="WITHDRAW"
+            [style]="{
+              color: 'red',
+              fontSize: '20px',
+              fontWeight: '700',
+              width: '150px',
+              border: '1px strong #2b2d42'
+            }"
+          />
+        </div>
+        } @if(!job().isApplied){
+        <div class="button-container">
+          <p [style]="{ color: '#ef233c' }">
+            <i class="fa-solid fa-x"></i><strong> Not Applied</strong>
+          </p>
+          <app-button
+            (buttonClicked)="onApplyWithdraw()"
+            text="APPLY"
+            [style]="{
+              color: 'green',
+              fontSize: '20px',
+              fontWeight: '700',
+              width: '150px',
+              border: '1px strong #2b2d42'
+            }"
+          />
+        </div>
+        }
       </div>
     </div>
   </div>

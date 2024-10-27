@@ -18,6 +18,33 @@ header {
     .fa-solid {
       color: #ef233c;
     }
+
+    .filter-panel,ul{
+      font-size: 20px;
+      display: flex;
+      
+      align-items: center;
+      list-style: none;
+     
+      li{
+        font-size: 18px;
+        margin: 5px;
+        width: 100px;
+        text-align: center;
+        cursor: pointer;      }
+      li:hover{
+        background-color: #ef233c;
+
+      } 
+      p{
+        color: #8d99ae;
+        font-weight: 700;
+        font-size: 18px;
+      }     
+    }
+
+   
+
     .jobs-info-header {
       font-size: 20px;
     }

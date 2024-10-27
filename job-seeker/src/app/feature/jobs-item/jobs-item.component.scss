@@ -1,7 +1,8 @@
 .card {
   border-radius: 5px;
   background-color: #edf2f4;
-  max-width: 470px;
+  width: 470px;
+  cursor: default;
 }
 
 .card-header {
@@ -12,6 +13,7 @@
   border-radius: 5px 5px 0 0;
   padding: 10px 10px 4px 10px;
   border-bottom: 2px solid #ef233c;
+
   h1 {
     font-size: 26px;
   }
@@ -28,6 +30,12 @@
   }
   h3 {
     padding-left: 10px;
+    cursor: pointer;
+  }
+  .button-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 }
 

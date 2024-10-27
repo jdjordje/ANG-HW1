@@ -1,5 +1,6 @@
 <div class="card-container">
-  @for (job of jobs(); track job.company) {
+  @for (job of jobs() | filter: filterValue() | numberSort: numberSortValue() |
+  workTypeSort: sortWork(); track job.id) {
   <app-jobs-item [job]="job" />
   }
 </div>

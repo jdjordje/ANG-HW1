@@ -20,9 +20,14 @@ export class ToogleDetailsDirective implements OnInit {
   jobDetailsEl: HTMLDivElement;
   isOpen = false;
 
+  jobDetailTitle: HTMLHeadingElement;
+
   ngOnInit() {
     this.jobDetailsEl =
       this.elementRef.nativeElement.querySelector('.more-info');
+
+    this.jobDetailTitle =
+      this.elementRef.nativeElement.querySelector('.heading');
 
     this.isOpen = this.isInitiallyOpen();
 
@@ -34,11 +39,24 @@ export class ToogleDetailsDirective implements OnInit {
   }
 
   @HostListener('click') onClick() {
-    this.isOpen = !this.isOpen;
-    this.renderer.setStyle(
-      this.jobDetailsEl,
-      'display',
-      this.isOpen ? 'block' : 'none'
-    );
+    if (!this.isOpen) {
+      this.isOpen = !this.isOpen;
+      this.renderer.setStyle(
+        this.jobDetailsEl,
+        'display',
+        this.isOpen ? 'block' : 'none'
+      );
+      this.jobDetailTitle.innerHTML =
+        'More info <i class="fa-solid fa-caret-up"></i>';
+    } else {
+      this.isOpen = !this.isOpen;
+      this.renderer.setStyle(
+        this.jobDetailsEl,
+        'display',
+        this.isOpen ? 'block' : 'none'
+      );
+      this.jobDetailTitle.innerHTML =
+        'More info <i class="fa-solid fa-caret-down"></i>';
+    }
   }
 }

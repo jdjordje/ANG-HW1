@@ -2,6 +2,7 @@ import { Job } from './models/jobs.models';
 
 export const jobMock: Job[] = [
   {
+    id: 1,
     company: 'Tech Innovations Inc.',
     expires: '2023-12-01',
     position: 'Software Engineer',
@@ -15,6 +16,7 @@ export const jobMock: Job[] = [
     isApplied: false,
   },
   {
+    id: 2,
     company: 'Creative Solutions Ltd.',
     expires: '2023-11-15',
     position: 'Product Designer',
@@ -28,6 +30,7 @@ export const jobMock: Job[] = [
     isApplied: true,
   },
   {
+    id: 3,
     company: 'Global Finance Corp.',
     expires: '2023-10-30',
     position: 'Financial Analyst',
@@ -42,6 +45,7 @@ export const jobMock: Job[] = [
     isApplied: false,
   },
   {
+    id: 4,
     company: 'Green Tech Solutions',
     expires: '2023-11-20',
     position: 'Environmental Consultant',
@@ -55,6 +59,7 @@ export const jobMock: Job[] = [
     isApplied: false,
   },
   {
+    id: 5,
     company: 'HealthPlus',
     expires: '2023-11-25',
     position: 'Project Manager',
@@ -68,6 +73,7 @@ export const jobMock: Job[] = [
     isApplied: false,
   },
   {
+    id: 6,
     company: 'Innovative Marketing Agency',
     expires: '2023-12-05',
     position: 'Digital Marketing Specialist',
@@ -81,6 +87,7 @@ export const jobMock: Job[] = [
     isApplied: true,
   },
   {
+    id: 7,
     company: 'Retail Giants',
     expires: '2023-11-30',
     position: 'Sales Associate',
@@ -94,6 +101,7 @@ export const jobMock: Job[] = [
     isApplied: false,
   },
   {
+    id: 8,
     company: 'Cybersecurity Solutions',
     expires: '2023-12-10',
     position: 'Cybersecurity Analyst',
@@ -106,6 +114,7 @@ export const jobMock: Job[] = [
     isApplied: false,
   },
   {
+    id: 9,
     company: 'Global Logistics Co.',
     expires: '2023-10-28',
     position: 'Logistics Coordinator',
@@ -118,6 +127,8 @@ export const jobMock: Job[] = [
     isApplied: false,
   },
   {
+    id: 10,
+
     company: 'EduTech',
     expires: '2023-12-15',
     position: 'Content Writer',
@@ -131,6 +142,7 @@ export const jobMock: Job[] = [
     isApplied: true,
   },
   {
+    id: 11,
     company: 'Smart Home Solutions',
     expires: '2023-11-18',
     position: 'Electrical Engineer',
@@ -143,6 +155,7 @@ export const jobMock: Job[] = [
     isApplied: false,
   },
   {
+    id: 12,
     company: 'Travel Adventures Inc.',
     expires: '2023-11-22',
     position: 'Travel Agent',
@@ -155,6 +168,7 @@ export const jobMock: Job[] = [
     isApplied: false,
   },
   {
+    id: 13,
     company: 'Foodies United',
     expires: '2023-12-12',
     position: 'Chef',
@@ -167,6 +181,8 @@ export const jobMock: Job[] = [
     isApplied: true,
   },
   {
+    id: 14,
+
     company: 'Innovate AI',
     expires: '2023-12-20',
     position: 'Data Scientist',
@@ -179,6 +195,7 @@ export const jobMock: Job[] = [
     isApplied: false,
   },
   {
+    id: 15,
     company: 'Brew Masters Co.',
     expires: '2023-11-05',
     position: 'Brewmaster',
@@ -191,6 +208,7 @@ export const jobMock: Job[] = [
     isApplied: false,
   },
   {
+    id: 16,
     company: 'Smart Health Solutions',
     expires: '2023-11-28',
     position: 'Nurse Practitioner',
@@ -203,6 +221,7 @@ export const jobMock: Job[] = [
     isApplied: true,
   },
   {
+    id: 17,
     company: 'NextGen Robotics',
     expires: '2023-12-03',
     position: 'Robotics Engineer',
@@ -215,6 +234,7 @@ export const jobMock: Job[] = [
     isApplied: false,
   },
   {
+    id: 18,
     company: 'Fashion Forward',
     expires: '2023-11-10',
     position: 'Fashion Designer',
@@ -227,6 +247,7 @@ export const jobMock: Job[] = [
     isApplied: false,
   },
   {
+    id: 19,
     company: 'City Transport Services',
     expires: '2023-11-27',
     position: 'Transportation Planner',
@@ -239,6 +260,7 @@ export const jobMock: Job[] = [
     isApplied: true,
   },
   {
+    id: 20,
     company: 'Elder Care Services',
     expires: '2023-12-08',
     position: 'Home Health Aide',

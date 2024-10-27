@@ -3,9 +3,30 @@
     <h1 class="header-title">
       <i class="fa-solid fa-arrows-to-dot"></i>JOB SEEKER
     </h1>
+    <div class="filter-panel">
+      <p>Filter by:</p>
+
+      <ul class="filter-nav">
+        <li (click)="onFilterClick($event)" title="true">Applied</li>
+        <li (click)="onFilterClick($event)" title="false">Not Applied</li>
+        <li (click)="onFilterClick($event)">Show All</li>
+      </ul>
+
+      <p>Sort by:</p>
+      <ul>
+        <li title="startingSalary" (click)="onSortSalaryClick($event)">
+          Salary
+        </li>
+        <li title="workType" (click)="onSortWorkTypeClick($event)">
+          Work Type
+        </li>
+        <li (click)="onSortResetClick($event)">Reset</li>
+      </ul>
+    </div>
+
     <div class="jobs-info-header">
-      <div>Available Jobs :</div>
-      <div>Total applied jobs :</div>
+      <div>Available Jobs : {{ totalJobs() }}</div>
+      <div>Total applied jobs : {{ totalAppliedJobs() }}</div>
     </div>
   </div>
 </header>
